@@ -1,0 +1,134 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-family: "Montserrat", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.title-block {
+  display: flex;
+  flex-direction: column;
+  max-width: 768px;
+}
+.title-block__title {
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 78px;
+  letter-spacing: 0px;
+}
+.title-block__subtitle {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0px;
+  margin-top: 24px;
+}
+
+.items {
+  display: flex;
+  justify-content: space-between;
+  background-color: #BCEC30;
+  box-sizing: border-box;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  -webkit-backdrop-filter: blur(50px);
+          backdrop-filter: blur(50px);
+  height: 90px;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 110%;
+  text-align: left;
+  text-transform: uppercase;
+  padding: 30px 0px;
+  animation: startLine 15s linear, marquee 15s linear 15s infinite;
+  width: 2630px;
+  margin: 0 auto;
+}
+
+.item__img {
+  animation: scroll 5s infinite linear;
+  background-image: url(/Star.png);
+  background-repeat: no-repeat;
+}
+
+@keyframes startLine {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(50%);
+  }
+}
+@keyframes marquee {
+  0% {
+    transform: translateX(50%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+.item {
+  width: 430px;
+  text-align: center;
+  margin-left: 10px;
+}
+
+.game-box {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: black;
+}
+
+.game-card {
+  background-color: white;
+}
+
+.section_green-bg {
+  background-image: url(/desktop.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 120px;
+}
+
+.btn {
+  box-sizing: border-box;
+  border: 1px solid rgb(32, 32, 39);
+  border-radius: 60px;
+  background: rgb(32, 32, 39);
+  color: rgb(255, 255, 255);
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.4;
+  letter-spacing: 0;
+  text-align: center;
+  padding: 16px 28px;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+  transition: background-color 0.3s;
+}
+.btn_small {
+  max-width: 246px;
+}
+
+.top-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 800px;
+}
+.top-section__go-btn {
+  margin-top: 48px;
+}/*# sourceMappingURL=style.css.map */

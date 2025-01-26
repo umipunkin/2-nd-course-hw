@@ -1,0 +1,26 @@
+.btn {
+    box-sizing: border-box;
+    border: 1px solid rgb(32, 32, 39);
+    border-radius: 60px;
+    background: rgb(32, 32, 39);
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.4;
+    letter-spacing: 0;
+    text-align: center;
+    padding: 16px 28px;
+    cursor: pointer;
+
+
+    &:hover {
+        background-color: white;
+        color: black;
+        border: 1px solid black;
+        transition: background-color .3s;
+    }
+
+    &_small  {
+        max-width: 246px;
+    }
+}

@@ -1,0 +1,109 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+
+
+
+.title-block {
+    display: flex;
+    flex-direction: column;
+    max-width: 768px;
+
+
+    &__title {
+        font-size: 64px;
+    font-weight: 700;
+    line-height: 78px;
+    letter-spacing: 0px;
+    }
+
+    &__subtitle {
+        font-size: 24px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 0px;
+   margin-top: 24px;
+    }
+}
+
+
+
+
+
+
+.items {
+    display:flex;
+    justify-content: space-between;
+    background-color: #BCEC30;
+    box-sizing: border-box;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(50px);
+    height: 90px;
+    font-size: 30px;
+font-weight: 700;
+line-height: 110%;
+text-align: left;
+text-transform: uppercase;
+padding: 30px 0px;
+
+
+animation: startLine 15s linear, marquee 15s linear 15s infinite;
+width: 2630px;
+margin: 0 auto;
+}
+
+
+.item__img {
+    -webkit-animation: scroll 5s infinite linear;
+-moz-animation: scroll 5s infinite linear;
+animation: scroll 5s infinite linear;
+background-image: url(/Star.png);
+background-repeat: no-repeat;
+}
+
+@keyframes startLine {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(50%);
+    }
+  }
+  
+  @keyframes marquee {
+    0% {
+      transform: translateX(50%);
+    }
+    100% {
+      transform: translateX(0%);
+    }
+  }
+
+
+  .item {
+        width: 430px;
+        text-align: center;
+        margin-left: 10px;
+  }
+
+
+
+
+.game-box {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: black;
+}
+
+.game-card {
+    background-color: white;
+}
