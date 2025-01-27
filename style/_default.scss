@@ -8,6 +8,7 @@ html {
     font-family: "Montserrat", serif;
     font-optical-sizing: auto;
     font-style: normal;
+    scroll-behavior: smooth;
 }
 
 
@@ -17,6 +18,11 @@ html {
     display: flex;
     flex-direction: column;
     max-width: 768px;
+    color: black;
+
+    &_white {
+        color: white;
+    }
 
 
     &__title {
@@ -24,6 +30,7 @@ html {
     font-weight: 700;
     line-height: 78px;
     letter-spacing: 0px;
+    color: inherit;
     }
 
     &__subtitle {
@@ -32,6 +39,7 @@ html {
     line-height: 32px;
     letter-spacing: 0px;
    margin-top: 24px;
+   color: inherit;
     }
 }
 
@@ -40,9 +48,7 @@ html {
 
 
 
-.items {
-    display:flex;
-    justify-content: space-between;
+.items-wrap {
     background-color: #BCEC30;
     box-sizing: border-box;
     border: 1px solid rgba(255, 255, 255, 0.2);
@@ -53,55 +59,17 @@ font-weight: 700;
 line-height: 110%;
 text-align: left;
 text-transform: uppercase;
-padding: 30px 0px;
-
-
-animation: startLine 15s linear, marquee 15s linear 15s infinite;
-width: 2630px;
-margin: 0 auto;
+padding: 30px 0px
 }
 
-
-.item__img {
-    -webkit-animation: scroll 5s infinite linear;
--moz-animation: scroll 5s infinite linear;
-animation: scroll 5s infinite linear;
-background-image: url(/Star.png);
-background-repeat: no-repeat;
+.items-wrap__flex {
+    display:flex;
+    justify-content: space-between;
 }
 
-@keyframes startLine {
-    0% {
-      transform: translateX(100%);
-    }
-    100% {
-      transform: translateX(50%);
-    }
-  }
-  
-  @keyframes marquee {
-    0% {
-      transform: translateX(50%);
-    }
-    100% {
-      transform: translateX(0%);
-    }
-  }
-
-
-  .item {
-        width: 430px;
-        text-align: center;
-        margin-left: 10px;
-  }
-
-
-
-
-.game-box {
-    display: flex;
-    flex-wrap: wrap;
-    background-color: black;
+.items-wrap__item-img {
+    text-align: center;
+    margin-left: 51px;
 }
 
 .game-card {

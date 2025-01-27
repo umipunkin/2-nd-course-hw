@@ -5,4 +5,12 @@
         background-size: cover;
         background-repeat: no-repeat;
     }
+
+    &_black {
+        background-color: black;
+    }
+
+    &_about {
+        padding: 94px 0 50px;
+    }
 }
