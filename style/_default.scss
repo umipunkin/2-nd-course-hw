@@ -1,0 +1,77 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    scroll-behavior: smooth;
+}
+
+
+
+
+.title-block {
+    display: flex;
+    flex-direction: column;
+    max-width: 768px;
+    color: black;
+
+    &_white {
+        color: white;
+    }
+
+
+    &__title {
+        font-size: 64px;
+    font-weight: 700;
+    line-height: 78px;
+    letter-spacing: 0px;
+    color: inherit;
+    }
+
+    &__subtitle {
+        font-size: 24px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 0px;
+   margin-top: 24px;
+   color: inherit;
+    }
+}
+
+
+
+
+
+
+.items-wrap {
+    background-color: #BCEC30;
+    box-sizing: border-box;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(50px);
+    height: 90px;
+    font-size: 30px;
+font-weight: 700;
+line-height: 110%;
+text-align: left;
+text-transform: uppercase;
+padding: 30px 0px
+}
+
+.items-wrap__flex {
+    display:flex;
+    justify-content: space-between;
+}
+
+.items-wrap__item-img {
+    text-align: center;
+    margin-left: 51px;
+}
+
+.game-card {
+    background-color: white;
+}
