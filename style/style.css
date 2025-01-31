@@ -65,6 +65,14 @@ html {
   background-color: white;
 }
 
+@media screen and (max-width: 1023px) {
+  .title-block__title {
+    font-size: 40px;
+  }
+  .title-block__subtitle {
+    font-size: 14px;
+  }
+}
 .section_green-bg {
   background-image: url(/desktop.jpeg);
   background-size: cover;
@@ -88,6 +96,12 @@ html {
   margin: 0 auto;
 }
 
+@media screen and (max-width: 1023px) {
+  .container {
+    max-width: 100%;
+    padding: 0px 17px;
+  }
+}
 .btn {
   box-sizing: border-box;
   border: 1px solid rgb(32, 32, 39);
@@ -122,6 +136,18 @@ html {
   margin-top: 48px;
 }
 
+@media screen and (max-width: 1023px) {
+  .top-section {
+    align-items: stretch;
+  }
+  .top-section__title {
+    text-align: center;
+  }
+  .top-section__go-btn {
+    width: 100%;
+    max-width: 100%;
+  }
+}
 .game-box {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
