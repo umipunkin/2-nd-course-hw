@@ -27,19 +27,19 @@ html {
 
     &__title {
         font-size: 64px;
-    font-weight: 700;
-    line-height: 78px;
-    letter-spacing: 0px;
-    color: inherit;
+        font-weight: 700;
+        line-height: 78px;
+        letter-spacing: 0px;
+        color: inherit;
     }
 
     &__subtitle {
         font-size: 24px;
-    font-weight: 400;
-    line-height: 32px;
-    letter-spacing: 0px;
-   margin-top: 24px;
-   color: inherit;
+        font-weight: 400;
+        line-height: 32px;
+        letter-spacing: 0px;
+        margin-top: 24px;
+        color: inherit;
     }
 }
 
@@ -55,15 +55,15 @@ html {
     backdrop-filter: blur(50px);
     height: 90px;
     font-size: 30px;
-font-weight: 700;
-line-height: 110%;
-text-align: left;
-text-transform: uppercase;
-padding: 30px 0px
+    font-weight: 700;
+    line-height: 110%;
+    text-align: left;
+    text-transform: uppercase;
+    padding: 30px 0px
 }
 
 .items-wrap__flex {
-    display:flex;
+    display: flex;
     justify-content: space-between;
 }
 

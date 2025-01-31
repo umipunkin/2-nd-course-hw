@@ -12,5 +12,13 @@
 
     &_about {
         padding: 94px 0 50px;
+        background-color: black;
+        overflow: visible;
+        background:
+            url("/big-star.svg"), url('/shuriken.svg'), url('/shuriken.svg'), black;
+        background-repeat: no-repeat;
+
+        background-size: auto, 32px, 56px;
+        background-position: calc(50% + 500px) 94px, calc(50% - 700px) 770px, calc(50% - 650px) 822px;
     }
 }

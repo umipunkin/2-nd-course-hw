@@ -75,6 +75,12 @@ html {
 }
 .section_about {
   padding: 94px 0 50px;
+  background-color: black;
+  overflow: visible;
+  background: url("/big-star.svg"), url("/shuriken.svg"), url("/shuriken.svg"), black;
+  background-repeat: no-repeat;
+  background-size: auto, 32px, 56px;
+  background-position: calc(50% + 500px) 94px, calc(50% - 700px) 770px, calc(50% - 650px) 822px;
 }
 
 .container {
@@ -125,6 +131,10 @@ html {
 }
 .game-box__item {
   grid-column: span 4;
+  height: 100%;
+}
+.game-box__item a {
+  text-decoration: none;
 }
 .game-box__game-card {
   background-color: white;
@@ -132,6 +142,7 @@ html {
   max-width: 378px;
   transition: transform 0.3s;
   cursor: pointer;
+  height: 100%;
 }
 .game-box__game-card:hover {
   transform: scaleY(1.1);
