@@ -1,7 +1,7 @@
 
 // 1-ое задание
 let a=10;
-// let a=20;
+a=20;
 alert(a);
 
 // 2-ое задание
@@ -40,11 +40,11 @@ alert(remains)
 // 7-ое задание
 let num = 1;
 num += 5;
-// num -= 3;
-// num *= 7;
-// num /= 3;
-// num += 1;
-// num -= 1;
+num -= 3;
+num *= 7;
+num /= 3;
+num += 1;
+num -= 1;
 alert(num);
 
 // 8-ое задание
