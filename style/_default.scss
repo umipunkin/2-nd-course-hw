@@ -65,6 +65,7 @@ html {
 .items-wrap__flex {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .items-wrap__item-img {
@@ -85,6 +86,16 @@ html {
         &__subtitle {
             font-size: 14px;
         }
+    }
+
+    .items-wrap__item-img {
+        font-size: 16px;
+        margin-left: 27px;
+    }
+
+    img.items-wrap__item-img {
+        width: 20px;
+        height: 20px;
     }
 
     }

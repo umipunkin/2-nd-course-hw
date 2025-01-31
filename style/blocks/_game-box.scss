@@ -64,3 +64,11 @@
         color: black;
     }
 }
+
+@media screen and (max-width: 1023px) {
+    .game-box {
+        &__item {
+            grid-column: span 12;
+        }
+    }
+}

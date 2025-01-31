@@ -22,3 +22,11 @@
         background-position: calc(50% + 500px) 94px, calc(50% - 700px) 770px, calc(50% - 650px) 822px;
     }
 }
+
+@media screen and (max-width: 1023px) {
+    .section {
+        &_about {
+            display: none;
+        }
+    }
+}

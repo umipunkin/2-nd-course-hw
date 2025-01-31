@@ -54,6 +54,7 @@ html {
 .items-wrap__flex {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .items-wrap__item-img {
@@ -71,6 +72,14 @@ html {
   }
   .title-block__subtitle {
     font-size: 14px;
+  }
+  .items-wrap__item-img {
+    font-size: 16px;
+    margin-left: 27px;
+  }
+  img.items-wrap__item-img {
+    width: 20px;
+    height: 20px;
   }
 }
 .section_green-bg {
@@ -91,6 +100,11 @@ html {
   background-position: calc(50% + 500px) 94px, calc(50% - 700px) 770px, calc(50% - 650px) 822px;
 }
 
+@media screen and (max-width: 1023px) {
+  .section_about {
+    display: none;
+  }
+}
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -198,4 +212,10 @@ html {
   border-radius: 52px;
   text-decoration: none;
   color: black;
+}
+
+@media screen and (max-width: 1023px) {
+  .game-box__item {
+    grid-column: span 12;
+  }
 }/*# sourceMappingURL=style.css.map */
