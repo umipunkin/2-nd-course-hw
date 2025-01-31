@@ -110,7 +110,7 @@ html {
   margin: 0 auto;
 }
 
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 1200px) {
   .container {
     max-width: 100%;
     padding: 0px 17px;
