@@ -218,4 +218,64 @@ html {
   .game-box__item {
     grid-column: span 12;
   }
+}
+.mini-game {
+  display: grid;
+  gap: 32px;
+  margin-top: 72px;
+  transition: gap 0.3s ease;
+}
+.mini-game__item {
+  grid-column: span 4;
+  height: 100%;
+  width: 100%;
+}
+.mini-game__item a {
+  text-decoration: none;
+}
+.mini-game__mini-game-card {
+  display: flex;
+  flex-direction: row-reverse;
+  background-color: white;
+  border-radius: 30px;
+  max-width: 100%;
+  transition: transform 0.3s;
+  cursor: pointer;
+  height: 100%;
+}
+.mini-game__mini-game-card:hover {
+  transform: scaleY(1.1);
+}
+.mini-game__mini-game-name {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 59px;
+  letter-spacing: 0px;
+  color: black;
+  text-decoration: none;
+}
+.mini-game__mini-game-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 48px;
+}
+.mini-game__mini-game-rulse {
+  display: inline-block;
+  padding: 24px 0px;
+  text-decoration: none;
+  color: black;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+  text-align: left;
+}
+.mini-game__mini-game-img {
+  width: 50%;
+}
+.mini-game__mini-game-img img {
+  width: 600px;
+}
+.mini-game__go-btn {
+  margin-top: 12px;
 }/*# sourceMappingURL=style.css.map */
