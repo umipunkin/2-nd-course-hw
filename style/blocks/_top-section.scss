@@ -17,3 +17,18 @@
         // }
     }
 }
+
+@media screen and (max-width: 1023px) {
+    .top-section {
+     align-items: stretch;
+
+        &__title {
+            text-align: center;
+        }
+
+        &__go-btn {
+            width: 100%;
+            max-width: 100%;
+        }
+    }
+}

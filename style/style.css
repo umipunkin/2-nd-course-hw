@@ -54,6 +54,7 @@ html {
 .items-wrap__flex {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .items-wrap__item-img {
@@ -65,6 +66,22 @@ html {
   background-color: white;
 }
 
+@media screen and (max-width: 1023px) {
+  .title-block__title {
+    font-size: 40px;
+  }
+  .title-block__subtitle {
+    font-size: 14px;
+  }
+  .items-wrap__item-img {
+    font-size: 16px;
+    margin-left: 27px;
+  }
+  img.items-wrap__item-img {
+    width: 20px;
+    height: 20px;
+  }
+}
 .section_green-bg {
   background-image: url(/desktop.jpeg);
   background-size: cover;
@@ -75,13 +92,30 @@ html {
 }
 .section_about {
   padding: 94px 0 50px;
+  background-color: black;
+  overflow: visible;
+  background: url("/big-star.svg"), url("/shuriken.svg"), url("/shuriken.svg"), black;
+  background-repeat: no-repeat;
+  background-size: auto, 32px, 56px;
+  background-position: calc(50% + 500px) 94px, calc(50% - 700px) 770px, calc(50% - 650px) 822px;
 }
 
+@media screen and (max-width: 1023px) {
+  .section_about {
+    display: none;
+  }
+}
 .container {
   max-width: 1200px;
   margin: 0 auto;
 }
 
+@media screen and (max-width: 1200px) {
+  .container {
+    max-width: 100%;
+    padding: 0px 17px;
+  }
+}
 .btn {
   box-sizing: border-box;
   border: 1px solid rgb(32, 32, 39);
@@ -116,6 +150,18 @@ html {
   margin-top: 48px;
 }
 
+@media screen and (max-width: 1023px) {
+  .top-section {
+    align-items: stretch;
+  }
+  .top-section__title {
+    text-align: center;
+  }
+  .top-section__go-btn {
+    width: 100%;
+    max-width: 100%;
+  }
+}
 .game-box {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
@@ -125,6 +171,10 @@ html {
 }
 .game-box__item {
   grid-column: span 4;
+  height: 100%;
+}
+.game-box__item a {
+  text-decoration: none;
 }
 .game-box__game-card {
   background-color: white;
@@ -132,6 +182,7 @@ html {
   max-width: 378px;
   transition: transform 0.3s;
   cursor: pointer;
+  height: 100%;
 }
 .game-box__game-card:hover {
   transform: scaleY(1.1);
@@ -161,4 +212,10 @@ html {
   border-radius: 52px;
   text-decoration: none;
   color: black;
+}
+
+@media screen and (max-width: 1023px) {
+  .game-box__item {
+    grid-column: span 12;
+  }
 }/*# sourceMappingURL=style.css.map */
