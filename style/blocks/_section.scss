@@ -1,21 +1,20 @@
 .section {
 
+    &_black {
+        background: #202027;
+        padding: 94px 0 50px;
+    }
+
     &_green-bg {
         background-image: url(/desktop.jpeg);
         background-size: cover;
         background-repeat: no-repeat;
     }
 
-    &_black {
-        background-color: black;
-    }
 
     &_about {
-        padding: 94px 0 50px;
-        background-color: black;
-        overflow: visible;
         background:
-            url("/big-star.svg"), url('/shuriken.svg'), url('/shuriken.svg'), black;
+            url("/big-star.svg"), url('/shuriken.svg'), url('/shuriken.svg')  #202027;
         background-repeat: no-repeat;
 
         background-size: auto, 32px, 56px;
