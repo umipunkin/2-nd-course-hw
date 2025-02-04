@@ -73,7 +73,6 @@
     display: grid;
     gap: 32px;
     margin-top: 72px;
-    transition: gap 0.3s ease;
 
 
 
@@ -88,7 +87,7 @@
 
         &:nth-child(2n) {
             .mini-game__mini-game-card {
-                flex-direction: row-reverse;
+                flex-direction: row;
             }
         }
     }
@@ -96,7 +95,7 @@
 
     &__mini-game-card {
         display: flex;
-        flex-direction: row;
+        flex-direction: row-reverse;
         background-color: white;
         border-radius: 30px;
         max-width: 100%;
@@ -104,10 +103,6 @@
         cursor: pointer;
         height: 100%;
         
-
-        &:hover {
-            transform: scaleY(1.1);
-        }
 
 
     }

@@ -85,8 +85,8 @@ if (c <= 10 && c >= 0) {
 
 // Задание 3
 
-let d = Number(prompt('Введите любое число'));
-let e = d;
+let d = Number(prompt('Введите любое число d'));
+let e = Number(prompt('Введите любое число e'));
 if (d > 100 || e > 100) {
     alert('Верно');
 } else {
