@@ -81,6 +81,8 @@ html {
     .title-block {
         &__title {
             font-size: 40px;
+            font-weight: 700;
+            line-height: 49px;
         }
 
         &__subtitle {
@@ -98,4 +100,19 @@ html {
         height: 20px;
     }
 
+    }
+
+
+    .footer {
+        background-color:#BCEC30;
+        padding: 60px 0;
+
+        &__block-title {
+            text-align: center;
+            font-family: inherit;
+            font-size: 24px;
+            font-weight: 600;
+            line-height: 29px;
+            letter-spacing: 0px;
+        }
     }

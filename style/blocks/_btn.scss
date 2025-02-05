@@ -11,6 +11,8 @@
     text-align: center;
     padding: 16px 28px;
     cursor: pointer;
+    min-width: 247px;
+    
 
 
     &:hover {
@@ -22,5 +24,13 @@
 
     &_small  {
         max-width: 246px;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .btn {
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 141.69%;
     }
 }
