@@ -187,7 +187,9 @@
                   >Попробуй угадать случайное число
                   от&nbsp;1&nbsp;до&nbsp;100.</span
                 >
-                <button class="mini-game__go-btn btn">Играть!</button>
+                <input class="mini-game__answer" type="number" id="userInput" placeholder="Введите ваше число" min="1" max="100">
+                <button onclick="checkGuess()" class="mini-game__go-btn btn">Играть!</button>
+                <div class="mini-game__option-answer" id="message"></div>
               </div>
             </article>
           </li>
@@ -298,6 +300,6 @@
       </div>
     </footer>
     <!-- <script src="/script.js"></script> -->
-    <script src="hw-4.js"></script>
+    <script src="hw-5.js"></script>
   </body>
 </html>
