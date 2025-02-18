@@ -1,26 +1,29 @@
-const randomNumber = Math.floor(Math.random() * 100) + 1;
-        let attempts = 0;
+function guessNumberGame() {
+    const randomNumber = Math.floor(Math.random() * 100) + 1;
+    let userGuess = 0;
 
-        function checkGuess() {
-            const userGuess = Number(document.getElementById('userInput').value);
-            attempts++;
-            const messageDiv = document.getElementById('message');
+    alert("Добро пожаловать в игру 'Угадай число'! Я загадал число от 1 до 100.");
 
-            if (userGuess < 1 || userGuess > 100) {
-                messageDiv.innerText = "Пожалуйста, введите число от 1 до 100.";
-                return;
-            }
+    while (userGuess !== randomNumber) {
+        userGuess = parseInt(prompt("Введите ваше число (от 1 до 100):"), 10);
 
-            if (userGuess > randomNumber) {
-                messageDiv.innerText = "Загаданное число меньше!";
-            } else if (userGuess < randomNumber) {
-                messageDiv.innerText = "Загаданное число больше!";
-            } else {
-                messageDiv.innerText = `Поздравляем! Вы угадали число ${randomNumber} за ${attempts} попыток!`;
-            }
+        if (isNaN(userGuess) || userGuess < 1 || userGuess > 100) {
+            alert("Пожалуйста, введите число в диапазоне от 1 до 100.");
+            continue;
         }
-         
 
+        if (userGuess < randomNumber) {
+            alert("Ваше число меньше загаданного. Попробуйте ещё раз.");
+        } else if (userGuess > randomNumber) {
+            alert("Ваше число больше загаданного. Попробуйте ещё раз.");
+        } else {
+            alert("Поздравляем! Вы угадали число: " + randomNumber);
+                break; 
+        }
+    }
+}
+
+guessNumberGame();
 
 // Задание 1
 
@@ -102,9 +105,9 @@ console.log(multiplyIfNumbers('xyz', 2));
 function cubeNumber() {
     while (true) {
 
-        let input = prompt("Введите число (или 'exit' для выхода):");
+        let input = prompt('Введите число:');
         
-        if (input.toLowerCase() === 'exit') {
+        if (input.toLowerCase() === null ) {
             break; 
         }
 

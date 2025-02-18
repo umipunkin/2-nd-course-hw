@@ -45,42 +45,6 @@ html {
 
 
 
-.mini-game__answer {
-    background-color: transparent;
-    font-family: inherit;
-    box-sizing: border-box;
-    border: 1px solid rgb(32, 32, 39);
-    border-radius: 60px;
-    color: black;
-    font-size: 24px;
-    font-weight: 600;
-    line-height: 1.4;
-    letter-spacing: 0;
-    text-align: center;
-    padding: 16px 28px;
-    cursor: pointer;
-    min-width: 247px;
-
-    &::-webkit-inner-spin-button,
-    &::-webkit-outer-spin-button {
-        -webkit-appearance: none;
-        margin: 0;
-    }
-
-    &::placeholder {
-        font-size: 17px;
-        text-align: left;
-    }
-}
-
-.mini-game__option-answer {
-    font-family: inherit;
-    color: black;
-    font-size: 24px;
-    font-weight: 600;
-    margin-top: 12px;
-}
-
 
 
 .items-wrap {
