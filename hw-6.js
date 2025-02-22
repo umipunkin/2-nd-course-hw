@@ -9,6 +9,7 @@ const generateProblem = () => {
     const operator = operators[Math.floor(Math.random() * operators.length)];
 
     return { num1, num2, operator };
+
 };
 
 const calculate = ({ num1, num2, operator }) => {
@@ -36,6 +37,7 @@ const calculate = ({ num1, num2, operator }) => {
             return null;
 
     }
+
 };
 
 const runQuiz = () => {
@@ -45,6 +47,7 @@ const runQuiz = () => {
         const problem = generateProblem();
 
         const userAnswer = prompt(`Решите задачу: ${problem.num1} ${problem.operator} ${problem.num2}`);
+
         
         if (userAnswer === null) {
 
@@ -62,13 +65,14 @@ const runQuiz = () => {
         } else {
 
             console.log(`Ошибка! Правильный ответ: ${correctAnswer}`);
+
         }
 
     }
 
 };
 
-runQuiz();
+
 
 
 // Задание 1
@@ -76,16 +80,14 @@ runQuiz();
 const firstTask = [1, 5, 4, 10, 0, 3];
 
 for (let i = 0; i < firstTask.length; i++) {
+   
+    
+    console.log(firstTask[i]);
 
     if (firstTask[i] === 10) {
-
-        console.log(firstTask[i]);
-
         break;
     }
-
-    console.log(firstTask[i]);
-}
+};
 
 // Задание 2
 
@@ -118,21 +120,17 @@ console.log(result);
 
 // Задание 4
 
-let multivariate = [
-    [1, 1, 1],
+const multivariate = [];
 
-    [1, 1, 1],
-
-    [1, 1, 1],
-];
-
-for (let numb of multivariate) {
-
-    for (let elements of numb) {
-
-        console.log(elements)
+for (let i = 0; i < 3; i++) {
+    const multivariate2 = [];
+    for (let i = 0; i < 3; i++) {
+        multivariate2.push(1);
     }
+    multivariate.push(multivariate2)
 }
+
+console.log(multivariate);
 
 
 // Задание 5
@@ -239,19 +237,27 @@ console.log(negativeNumbers);
 
 // Задание 14
 
-const randomArrayNumber = Array.from({ length: 10 }, () => Math.random() * 10);
+function randomNumber() {
+    return Math.floor(Math.random() * 10);
+}
 
-const evenValues = randomArrayNumber.filter(value => {
+const randomArrayNumber = [];
 
-  const roundedValue = Math.floor(value);
+for (let i = 0; i < 10; i++){
+    randomArrayNumber.push(randomNumber());
+}
 
-  return roundedValue % 2 === 0;
+console.log(randomArrayNumber);
 
-});
+const evenArr = [];
 
-console.log("Исходный массив:", randomArrayNumber);
+for (let i = 0; i < randomArrayNumber.length; i++) {
+    if (randomArrayNumber[i] % 2 === 0) {
+        evenArr.push(randomArrayNumber[i]);
+    }
+}
 
-console.log("Массив с четными значениями:", evenValues);
+console.log(evenArr);
 
 // Задание 15
 

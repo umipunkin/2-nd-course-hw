@@ -36,6 +36,20 @@ html {
   color: inherit;
 }
 
+.footer {
+  background-color: #BCEC30;
+  padding: 60px 0;
+  height: 100px;
+}
+.footer__block-title {
+  text-align: center;
+  font-family: inherit;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 29px;
+  letter-spacing: 0px;
+}
+
 .items-wrap {
   background-color: #BCEC30;
   box-sizing: border-box;
@@ -83,20 +97,20 @@ html {
     width: 20px;
     height: 20px;
   }
+  .footer {
+    background-color: #BCEC30;
+    padding: 40px 0;
+    height: 100px;
+  }
+  .footer__block-title {
+    text-align: center;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 0px;
+  }
 }
-.footer {
-  background-color: #BCEC30;
-  padding: 60px 0;
-}
-.footer__block-title {
-  text-align: center;
-  font-family: inherit;
-  font-size: 24px;
-  font-weight: 600;
-  line-height: 29px;
-  letter-spacing: 0px;
-}
-
 .section_black {
   background: #202027;
   padding: 94px 0 50px;
@@ -130,6 +144,7 @@ html {
   }
 }
 .btn {
+  font-family: inherit;
   box-sizing: border-box;
   border: 1px solid rgb(32, 32, 39);
   border-radius: 60px;
