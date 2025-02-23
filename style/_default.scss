@@ -44,7 +44,20 @@ html {
 }
 
 
+.footer {
+    background-color:#BCEC30;
+    padding: 60px 0;
+    height: 100px;
 
+    &__block-title {
+        text-align: center;
+        font-family: inherit;
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 29px;
+        letter-spacing: 0px;
+    }
+}
 
 
 .items-wrap {
@@ -99,20 +112,23 @@ html {
         height: 20px;
     }
 
-    }
-
 
     .footer {
         background-color:#BCEC30;
-        padding: 60px 0;
+        padding: 40px 0;
+        height: 100px;
 
         &__block-title {
             text-align: center;
             font-family: inherit;
-            font-size: 24px;
+            font-size: 16px;
             font-weight: 600;
-            line-height: 29px;
+            line-height: 20px;
             letter-spacing: 0px;
         }
     }
+
+    }
+
+
     
