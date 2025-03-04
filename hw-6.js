@@ -60,11 +60,11 @@ const runQuiz = () => {
         
         if (parseFloat(userAnswer) === correctAnswer) {
 
-            console.log('Верный ответ!');
+            alert('Верный ответ!');
 
         } else {
 
-            console.log(`Ошибка! Правильный ответ: ${correctAnswer}`);
+            alert(`Ошибка! Правильный ответ: ${correctAnswer}`);
 
         }
 
@@ -81,7 +81,7 @@ const firstTask = [1, 5, 4, 10, 0, 3];
 
 for (let i = 0; i < firstTask.length; i++) {
    
-    
+
     console.log(firstTask[i]);
 
     if (firstTask[i] === 10) {
