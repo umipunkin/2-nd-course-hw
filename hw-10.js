@@ -1,29 +1,33 @@
-function guessNumberGame() {
-    const randomNumber = Math.floor(Math.random() * 100) + 1;
-    let userGuess = 0;
+document.getElementById('startGameButton').addEventListener('click', guessNumberGame);
 
-    alert("Добро пожаловать в игру 'Угадай число'! Я загадал число от 1 до 100.");
+        function guessNumberGame() {
+            const randomNumber = Math.floor(Math.random() * 100) + 1;
+            let userGuess = 0;
 
-    while (userGuess !== randomNumber) {
-        userGuess = parseInt(prompt("Введите ваше число (от 1 до 100):"), 10);
+            alert("Добро пожаловать в игру 'Угадай число'! Я загадал число от 1 до 100.");
 
-        if (isNaN(userGuess) || userGuess < 1 || userGuess > 100) {
-            alert("Пожалуйста, введите число в диапазоне от 1 до 100.");
-            continue;
+            while (userGuess !== randomNumber) {
+                userGuess = parseInt(prompt("Введите ваше число (от 1 до 100):"), 10);
+
+
+                if (isNaN(userGuess) || userGuess < 1 || userGuess > 100) {
+                    alert("Пожалуйста, введите число в диапазоне от 1 до 100.");
+                    return;
+                    
+                }
+                
+
+                if (userGuess < randomNumber) {
+                    alert("Ваше число меньше загаданного. Попробуйте ещё раз.");
+                } else if (userGuess > randomNumber) {
+                    alert("Ваше число больше загаданного. Попробуйте ещё раз.");
+                } else {
+                    alert("Поздравляем! Вы угадали число: " + randomNumber);
+                    break; 
+                }
+            }
         }
 
-        if (userGuess < randomNumber) {
-            alert("Ваше число меньше загаданного. Попробуйте ещё раз.");
-        } else if (userGuess > randomNumber) {
-            alert("Ваше число больше загаданного. Попробуйте ещё раз.");
-        } else {
-            alert("Поздравляем! Вы угадали число: " + randomNumber);
-                break; 
-        }
-    }
-}
-
-guessNumberGame();
 
 
 const generateProblem = () => {
