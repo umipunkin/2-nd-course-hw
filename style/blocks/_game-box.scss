@@ -7,7 +7,7 @@
     transition: gap 0.3s ease;
 
 
-    &__game-card-img {
+    &__img {
         width: 100%;
     }
 
@@ -24,7 +24,7 @@
 
 
 
-    &__game-card {
+    &__card {
         background-color: white;
         border-radius: 30px;
         max-width: 378px;
@@ -40,7 +40,7 @@
 
     }
 
-    &__game-card-name {
+    &__name {
         font-size: 32px;
         font-weight: 700;
         line-height: 39px;
@@ -49,7 +49,7 @@
         text-decoration: none;
     }
 
-    &__game-card-content {
+    &__content {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
@@ -57,7 +57,7 @@
         gap: 16px;
     }
 
-    &__game-card-number {
+    &__number {
         display: inline-block;
         padding: 8px 16px;
         background-color: rgb(247, 247, 247);
@@ -86,16 +86,16 @@
         }
 
         &:nth-child(2n) {
-            .mini-game__mini-game-card {
+            .mini-game__card {
                 flex-direction: row;
             }
         }
     }
 
 
-    &__mini-game-card {
+    &__card {
         display: flex;
-        flex-direction: row-reverse;
+        flex-direction: reverse;
         background-color: white;
         border-radius: 30px;
         max-width: 100%;
@@ -103,11 +103,14 @@
         cursor: pointer;
         height: 100%;
         
+        &:nth-child(2n - 1) {
+           flex-direction: row-reverse; 
+        }
 
 
     }
 
-    &__mini-game-name {
+    &__name {
         font-size: 48px;
         font-weight: 700;
         line-height: 59px;
@@ -116,14 +119,15 @@
         text-decoration: none;
     }
 
-    &__mini-game-content {
+    &__content {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
         padding: 48px;
+        transition: background-color 0.5s;
     }
 
-    &__mini-game-rulse {
+    &__rulse {
         display: inline-block;
         padding: 24px 0px;
         text-decoration: none;
@@ -134,7 +138,7 @@
         text-align: left;
     }
 
-    &__mini-game-img {
+    &__img {
         width: 50%;
 
     }
@@ -154,11 +158,11 @@
     }
 
     .mini-game {
-        &__mini-game-card {
+        &__card {
             flex-direction: column;
         }
 
-        &__mini-game-content {
+        &__content {
             padding: 30px;
         }
 
@@ -166,25 +170,25 @@
             width: 100%;
         }
 
-        &__mini-game-name {
+        &__name {
             font-size: 32px;
             font-weight: 700;
             line-height: 39px;
         }
 
-        &__mini-game-rulse {
+        &__rulse {
             font-size: 16px;
             font-weight: 400;
             line-height: 20px;
         }
 
-        &__mini-game-img {
+        &__img {
             width: 100%;
         }
 
         &__item {
             &:nth-child(2n) {
-                .mini-game__mini-game-card {
+                .mini-game_card {
                     flex-direction: column;
                 }
             }

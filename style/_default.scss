@@ -11,8 +11,9 @@ html {
     scroll-behavior: smooth;
 }
 
-
-
+body {
+    transition: background-color 0.5s;
+}
 
 .title-block {
     display: flex;
